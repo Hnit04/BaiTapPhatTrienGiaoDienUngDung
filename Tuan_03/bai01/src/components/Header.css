@@ -1,0 +1,99 @@
+/* Header.css */
+.header {
+  width: calc(100% - 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px; /* Tăng padding để avatar không bị ép */
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px; /* Đảm bảo chiều cao đủ lớn */
+  border-bottom: 1px solid #f0f0f0; /* Thêm đường viền dưới */
+}
+
+
+  /* Logo Container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Khoảng cách giữa icon và chữ */
+  }
+  
+  /* Logo Image */
+  .logo-img {
+    width: 180px; /* Kích thước logo */
+    height: auto;
+  }
+  
+  /* Logo Text */
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4081; /* Màu hồng */
+    font-family: "Arial", sans-serif;
+  }
+  
+  
+  /* Thanh tìm kiếm */
+  .search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+  .search-icon {
+    margin-right: 6px;
+  }
+  .search-box input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .recipe-box {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    background-color: #ffe4ec;
+    color: #ff4081;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 8px; /* Tạo khoảng cách giữa icon và chữ */
+}
+
+.recipe-box img {
+    width: 20px; /* Điều chỉnh kích thước icon */
+    height: 20px;
+    vertical-align: middle; /* Căn chỉnh icon với chữ */
+}

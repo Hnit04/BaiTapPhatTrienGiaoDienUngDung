@@ -1,0 +1,101 @@
+.filters-sidebar {
+  width: 500px; /* Tăng chiều rộng lên */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options {
+  display: flex;
+  gap: 20px; 
+}
+
+.column {
+  flex: 1;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-bottom: 10px;
+}
+
+.filter-section label {
+  display: block;
+  margin: 5px 0;
+}
+
+.apply-btn {
+  width: 100%;
+  background: #ff4081;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #e6376f;
+}
+/* Chỉnh lại căn chỉnh của checkbox */
+label {
+  display: flex;
+  align-items: center; /* Căn checkbox và chữ theo cùng một đường ngang */
+  gap: 8px; /* Khoảng cách giữa checkbox và chữ */
+  cursor: pointer;
+}
+
+/* Tùy chỉnh checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle; /* Đảm bảo checkbox không bị lệch */
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Khi checkbox được chọn */
+input[type="checkbox"]:checked {
+  background-color: #ff4081; /* Màu hồng */
+  border-color: #ff4081;
+}
+
+/* Hiển thị dấu tích khi chọn */
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e91e63; /* Màu hồng */
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  color: #e91e63; /* Mũi tên hồng */
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
