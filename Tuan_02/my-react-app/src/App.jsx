@@ -1,12 +1,15 @@
-import React from "react";
-import ItemList from "./components/itemList";
-import items from "./data/data";
-
-export default function App() {
+ 
+import Lab01 from "./components/Lab01.jsx"; 
+import Lab02 from "./components/Lab02.jsx"; 
+import Lab03 from "./components/Lab03.jsx"; 
+import Lab04 from "./components/Lab04.jsx"; 
+import Lab05 from "./components/Lab05.jsx"; 
+function App() {
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Ứng dụng hiển thị danh sách Item</h1>
-      <ItemList items={items} />
+    <div  style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
+      <Lab05 />
     </div>
   );
 }
+
+export default App;
